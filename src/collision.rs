@@ -55,7 +55,7 @@ pub fn get_block_collision_time(ball: &Ball, block: &Block, time_limit:f32) -> C
     if col_t > time_limit {
         return CollisionState::trash(); 
     }
-
+    assert!(col_t>0.); 
     let dir_ = if tx > ty {
         Dir::LR
     } else {

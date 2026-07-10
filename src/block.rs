@@ -1,4 +1,5 @@
 use macroquad::prelude::*;
+#[derive(Debug)]
 pub struct Block {
     pub x: f32, 
     pub y: f32,
